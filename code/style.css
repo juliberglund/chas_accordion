@@ -1,4 +1,40 @@
+/* Style the background color and text color */
 html {
   background: #f2f1f4;
   color: #19171c;
+}
+
+.accordion {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.title {
+  background-color: #d1c4c4;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+.title.active + .description {
+  display: block;
+}
+
+.title:hover {
+  background-color: rgba(0, 255, 255, 0.424);
+}
+
+.description {
+  padding: 0 10%;
+  display: none; /* Hide content by default */
+  background-color: #f9f9f9;
+  font-size: 94%;
+}
+
+/* Style for active class on clicked title */
+.title.active {
+  background-color: lightblue;
 }

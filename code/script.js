@@ -5,5 +5,11 @@ function toggle(e) {
 }
 
 // Selects and HTML element, and calls a function which will be executed when the element is clicked.
-const section1Element = document.getElementById("section1");
-section1Element.addEventListener("click", toggle);
+// const section1Element = document.getElementById("section1");
+// section1Element.addEventListener("click", toggle);
+
+const titles = document.querySelectorAll(".title");
+titles.forEach((title) => {
+  // Attach a click event listener to each title
+  title.addEventListener("click", toggle);
+});
