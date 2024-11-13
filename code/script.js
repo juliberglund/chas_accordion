@@ -23,7 +23,7 @@ fetch("https://jsonplaceholder.typicode.com/posts")
       // Create a new title div for each post
       const titleDiv = document.createElement("div");
       titleDiv.classList.add("title");
-      titleDiv.textContent = post.title; // Set the title text
+      titleDiv.innerHTML = `<h4>${post.title}</h4>`; // Set the title text
 
       // Create a new description div for each post
       const descriptionDiv = document.createElement("div");

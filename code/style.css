@@ -20,10 +20,6 @@ html {
   transition: background-color 0.3s;
 }
 
-/* .title.active + .description {
-  display: block; 
-} */
-
 .title:hover {
   background-color: rgba(0, 255, 255, 0.424);
 }
